@@ -27,7 +27,7 @@ map <tab> %
 map - $
 
 " Access to this configuration file in a new tab
-nnoremap <leader>rc :tabnew ~/.vimrc<CR>
+nnoremap <leader>rc :tabnew ~/.vim/vimrc<CR>
 
 "Minimum setting
 set encoding=utf-8
@@ -162,7 +162,7 @@ nmap <leader>st :!sage -tp 4 %<CR>
 nmap <leader>bst :!sage -b && sage -tp 4 %<CR>
 
 " When .vimrc is edited, auto-reload it
-autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost ~/.vim/vimrc source %
 
 " Toogle cross cursor
 " TODO: make it beautiful

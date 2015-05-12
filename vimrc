@@ -118,6 +118,8 @@ highlight LineNr ctermfg=grey
 " Extra white spaces
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+\%#\@<!$/
+" Delete trailing whitespace
+nnoremap <leader>w :%s/\s\+$//g<CR>
 
 "Avoid the escape key
 imap jj <Esc>

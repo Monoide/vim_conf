@@ -174,3 +174,8 @@ nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>
+
+" CtrlP
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+    \ 'file': '\.fls$\|\.so$\|\.toc$\|\.gz' }

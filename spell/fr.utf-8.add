@@ -27,6 +27,9 @@ bi-modules
 sous-modules
 sous-module
 finiment
+finiment
+artinien
+semi-simples
 catégorifiée
 semi-simple
 semi-simples
@@ -37,6 +40,7 @@ sous-groupe
 sous-groupes
 Ponizovskiĭ
 Munn
+<<<<<<< HEAD
 Peirce
 artinien
 décomposabilité
@@ -52,3 +56,6 @@ bialgèbres
 Schützenberger
 Coxeter
 l'annihilateur
+=======
+Schützenberger
+>>>>>>> 7a9c319ba37d5d3ffad542c5ae885ce34a3cd1ca

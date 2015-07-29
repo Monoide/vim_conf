@@ -152,11 +152,16 @@ nnoremap <leader>sa :ConqueTermVSplit sage<CR>
 vnoremap <leader>sa :ConqueTermVSplit sage<CR>
 " au BufRead,BufNewFile *.sage setfiletype python
 au BufRead,BufNewFile *.sage set syntax=python
-
 " Scala syntax
 au BufRead,BufNewFile *.scala set syntax=scala
 " Cython syntax
 au BufRead,BufNewFile *.pyx set syntax=cython
+
+" .tex and .cls are TeX
+au BufRead,BufNewFile *.cls set filetype=tex
+au BufRead,BufNewFile *.tex set syntax=tex
+
+
 
 " Sage tests on the buffered file
 nmap <leader>st :!sage -tp 4 %<CR>

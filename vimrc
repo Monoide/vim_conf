@@ -1,15 +1,6 @@
 set nocompatible " be iMproved
-
 execute pathogen#infect()
 
-" Colorscheme
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-
-syntax enable
-set background=dark
-" set background=light
-colorscheme solarized
 
 " Enable the mouse for all modes
 " set mouse=a
@@ -25,6 +16,20 @@ vnoremap ; :
 map <tab> %
 "Let's - act like $ (easier on qwerty for end of line)
 map - $
+
+syntax enable
+colorscheme solarized
+
+" Colorscheme
+let g:solarized_termcolors=256
+
+" Background black
+let g:color="black"
+let g:solarized_termtrans=1
+set background=dark
+
+" Toggle color black <-> white
+nnoremap <leader>c :call Toggle_color()<CR>
 
 " Access to this configuration file in a new tab
 nnoremap <leader>rc :tabnew ~/.vim/vimrc<CR>
@@ -175,7 +180,7 @@ autocmd! bufwritepost ~/.vim/vimrc source %
 " TODO: make it beautiful
 hi CursorLine   cterm=NONE ctermbg=LightGray ctermfg=white guibg=darkred guifg=white
 hi CursorColumn cterm=NONE ctermbg=LightGray ctermfg=white guibg=darkred guifg=white
-nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+nnoremap <Leader>C :set cursorline! cursorcolumn!<CR>
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>

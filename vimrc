@@ -1,7 +1,6 @@
 set nocompatible " be iMproved
 execute pathogen#infect()
 
-
 " Enable the mouse for all modes
 " set mouse=a
 
@@ -24,12 +23,12 @@ colorscheme solarized
 let g:solarized_termcolors=256
 
 " Background black
-let g:color="black"
+let g:theme="black"
 let g:solarized_termtrans=1
 set background=dark
 
 " Toggle color black <-> white
-nnoremap <leader>c :call Toggle_color()<CR>
+nnoremap <leader>c :call Toggle_theme()<CR>
 
 " Access to this configuration file in a new tab
 nnoremap <leader>rc :tabnew ~/.vim/vimrc<CR>

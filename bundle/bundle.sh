@@ -1,5 +1,5 @@
 #!/bin/zsh
-# No two dimensional arrays in bach... so two arrays!
+# No two dimensional arrays in bash... so two arrays!
 
 bundle=("ctrlp.vim"
         "LaTeX-Box"

@@ -7,7 +7,8 @@ bundle=("ctrlp.vim"
         "vim-airline"
         "vim-colors-solarized"
         "vim-fugitive"
-        "vim-signify")
+        "vim-signify"
+        "vim-dotoo")
 
 url=("git@github.com:kien/ctrlp.vim.git"
      "git@github.com:LaTeX-Box-Team/LaTeX-Box.git"
@@ -15,7 +16,8 @@ url=("git@github.com:kien/ctrlp.vim.git"
      "git@github.com:bling/vim-airline.git"
      "git@github.com:altercation/vim-colors-solarized.git"
      "git@github.com:tpope/vim-fugitive.git"
-     "git@github.com:mhinz/vim-signify.git")
+     "git@github.com:mhinz/vim-signify.git"
+     "git@github.com:dhruvasagar/vim-dotoo.git")
 
 # for couple in ${bundle[@]}
 for ((i=1; i<=${#bundle}; i++))

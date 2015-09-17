@@ -7,7 +7,9 @@ execute pathogen#infect()
 " ?
 set t_Co=256
 
+""""""""""""""""""
 " Mandatory remaps
+""""""""""""""""""
 let mapleader = "," " Leader key
 let maplocalleader = "\\" " Leader key
 nnoremap ; :
@@ -16,6 +18,9 @@ map <tab> %
 "Let's - act like $ (easier on qwerty for end of line)
 map - $
 
+"""""""""""""
+" ColorScheme
+"""""""""""""
 syntax enable
 colorscheme solarized
 
@@ -29,6 +34,7 @@ set background=dark
 
 " Toggle color black <-> white
 nnoremap <leader>c :call Toggle_theme()<CR>
+"""""""""""""
 
 " Access to this configuration file in a new tab
 nnoremap <leader>rc :tabnew ~/.vim/vimrc<CR>
@@ -69,7 +75,9 @@ set omnifunc=syntaxcomplete#Complete
 " Rainbow parenthesis activated
 let g:rainbow_active = 1
 
+""""""""""
 " Research
+""""""""""
 set incsearch
 set ignorecase
 set smartcase

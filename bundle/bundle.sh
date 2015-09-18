@@ -21,7 +21,6 @@ url=("git@github.com:kien/ctrlp.vim.git"
      "git@github.com:dhruvasagar/vim-dotoo.git"
      "git@github.com:jceb/vim-orgmode.git")
 
-# for couple in ${bundle[@]}
 for ((i=1; i<=${#bundle}; i++))
 do
     if [ -d "${bundle[$i]}" ]; then

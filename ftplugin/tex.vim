@@ -13,8 +13,8 @@ nnoremap <LocalLeader>q :LatexErrors<CR>
 let g:LatexBox_quickfix=4
 
 " SynTeX
-let g:LatexBox_latexmk_options =
-            \ '-pdflatex="pdflatex -synctex=1 -src-specials %O %S"'
+" let g:LatexBox_latexmk_options =
+"             \ '-pdflatex="pdflatex -synctex=1 -src-specials %O %S"'
 let g:LatexBox_viewer='okular --unique >/dev/null'
 
 function! SyncTexForward()

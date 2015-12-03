@@ -55,15 +55,15 @@ set wildignore=*.o,*.obj,*~,*bbl,*.pdf,*.out,*.aux,*.blg "ignore when tab comple
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png,.jpg,.pdf,.fls
 
 " Scrolling
-set scrolloff=8 "Start scrolling when we are 8 lines away from margins
-set sidescrolloff=15
-set sidescroll=1
+set scrolloff=7 "Start scrolling when we are 8 lines away from margins
+set sidescrolloff=14
+set sidescroll=0
 
 " set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
-set laststatus=2
+set laststatus=1
 
 set relativenumber "relative line
 set nu
@@ -71,6 +71,10 @@ set showmatch "cute parenthesis
 
 " Omnicompletion
 set omnifunc=syntaxcomplete#Complete
+
+" Buffers manipulation
+nnoremap <F9> :buffers<CR>:buffer<Space>
+nnoremap <C-b> <C-^>
 
 " Rainbow parenthesis activated
 let g:rainbow_active = 1
@@ -152,7 +156,7 @@ vnoremap <leader>gb :Gblame<CR>
 nnoremap // :TComment<CR>
 vnoremap // :TComment<CR>
 
-" Move quickly in QuickFixWindow
+" Move quickly in QuickFixWindow (very bad, to change)
 nnoremap <leader>n :cn <CR>
 nnoremap <leader>p :cp <CR>
 

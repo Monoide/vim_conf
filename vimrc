@@ -144,6 +144,11 @@ imap kk <Esc>
 " Grep the visual mode selection in the folder
 set grepprg=grep\ --color\ -n\ $*\ /dev/null
 vnoremap <leader>g :<c-u>call GrepFolder(visualmode())<CR>
+
+" Airline
+
+set laststatus=2
+
 """"""""""""""
 " Code ToolBox
 """"""""""""""

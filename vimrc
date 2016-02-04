@@ -205,3 +205,6 @@ nmap <F8> :TagbarToggle<CR>
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.hg$\|\.svn$',
     \ 'file': '\.fls$\|\.so$\|\.toc$\|\.gz' }
+
+" Write some emails...
+autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>

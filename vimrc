@@ -144,6 +144,11 @@ imap kk <Esc>
 " Grep the visual mode selection in the folder
 set grepprg=grep\ --color\ -n\ $*\ /dev/null
 vnoremap <leader>g :<c-u>call GrepFolder(visualmode())<CR>
+
+" Vim-airline
+set laststatus=2
+" let g:airline#extensions#tabline#enabled = 1
+
 """"""""""""""
 " Code ToolBox
 """"""""""""""

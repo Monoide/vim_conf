@@ -4,7 +4,7 @@ Personal configuration of vim.
 # Usage
 clone it and set the repository as $HOME/.vim
 
-#Bundle:
+#Bundles:
 - ctrlp
 - LaTeX-Box
 - tagbar
@@ -13,3 +13,12 @@ clone it and set the repository as $HOME/.vim
 - fugitive
 - signify
 - dotoo
+- orgmode
+- vim-go
+
+#Plugins
+- rainbow
+- Conque
+- TComment
+- SyntaxFolds
+- libList

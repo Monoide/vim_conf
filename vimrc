@@ -63,7 +63,6 @@ set sidescroll=0
 set ttyfast
 set ruler
 set backspace=indent,eol,start
-set laststatus=1
 
 set relativenumber "relative line
 set nu
@@ -145,10 +144,6 @@ imap kk <Esc>
 set grepprg=grep\ --color\ -n\ $*\ /dev/null
 vnoremap <leader>g :<c-u>call GrepFolder(visualmode())<CR>
 
-" Airline
-
-set laststatus=2
-
 """"""""""""""
 " Code ToolBox
 """"""""""""""
@@ -182,8 +177,6 @@ au BufRead,BufNewFile *.pyx set syntax=cython
 au BufRead,BufNewFile *.cls set filetype=tex
 au BufRead,BufNewFile *.tex set syntax=tex
 
-
-
 " Sage tests on the buffered file
 nmap <leader>st :!sage -tp 4 %<CR>
 " Recompile sage and make the tests on the buffered file
@@ -208,3 +201,13 @@ let g:ctrlp_custom_ignore = {
 
 " Write some emails...
 autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
+"
+" Airline
+set laststatus=2
+" disable default showmode
+set noshowmode
+let g:bufferline_echo = 0
+
+let g:airline_theme='molokai'
+let g:airline_powerline_fonts = 1
+

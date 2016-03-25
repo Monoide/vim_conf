@@ -8,7 +8,7 @@ clone it and set the repository as $HOME/.vim
 - ctrlp
 - LaTeX-Box
 - tagbar
-- airline
+- lightline
 - solarized
 - fugitive
 - signify

@@ -10,20 +10,18 @@ bundle=("ctrlp.vim"
         "vim-signify"
         "vim-dotoo"
         "vim-orgmode"
-        "vim-go"
-        "vim-airline-themes")
+        "vim-go")
 
 url=("git@github.com:kien/ctrlp.vim.git"
      "git@github.com:LaTeX-Box-Team/LaTeX-Box.git"
      "git@github.com:majutsushi/tagbar.git"
-     "git@github.com:itchyny/lightline.vim.git"
+     "git@github.com:itchyny/lightline.git"
      "git@github.com:altercation/vim-colors-solarized.git"
      "git@github.com:tpope/vim-fugitive.git"
      "git@github.com:mhinz/vim-signify.git"
      "git@github.com:dhruvasagar/vim-dotoo.git"
      "git@github.com:jceb/vim-orgmode.git"
-     "git@github.com:fatih/vim-go.git"
-     "git@github.com:vim-airline/vim-airline-themes.git")
+     "git@github.com:fatih/vim-go.git")
 
 for ((i=1; i<=${#bundle}; i++))
 do

@@ -174,9 +174,11 @@ au BufRead,BufNewFile *.scala set syntax=scala
 au BufRead,BufNewFile *.pyx set syntax=cython
 
 " .tex and .cls are TeX
+au BufRead,BufNewFile *.cls set syntax=tex
 au BufRead,BufNewFile *.cls set filetype=tex
 au BufRead,BufNewFile *.tex set filetype=tex
 au BufRead,BufNewFile *.tex set syntax=tex
+au BufRead,BufNewFile *.tex set filetype=tex
 
 " Sage tests on the buffered file
 nmap <leader>st :!sage -tp 4 %<CR>
@@ -203,12 +205,19 @@ let g:ctrlp_custom_ignore = {
 " Write some emails...
 autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
 "
-" Airline
+" Lightline
 set laststatus=2
 " disable default showmode
 set noshowmode
 let g:bufferline_echo = 0
 
-let g:airline_theme='molokai'
-let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
 
+let g:lightline = {
+    \ 'colorscheme': 'wombat',
+    \ 'component': {
+    \   'readonly': '%{&readonly?"":""}',
+    \ },
+    \ 'separator': { 'left': '', 'right': '' },
+    \ 'subseparator': { 'left': '', 'right': '' }
+    \ }

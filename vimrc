@@ -134,7 +134,7 @@ highlight LineNr ctermfg=grey
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+\%#\@<!$/
 " Delete trailing whitespace
-nnoremap <leader>w :%s/\s\+$//g<CR>
+nnoremap <leader>w :%s/\s\+$//g<CR>:noh<CR>
 
 "Avoid the escape key
 imap jj <Esc>
@@ -175,6 +175,7 @@ au BufRead,BufNewFile *.pyx set syntax=cython
 
 " .tex and .cls are TeX
 au BufRead,BufNewFile *.cls set filetype=tex
+au BufRead,BufNewFile *.tex set filetype=tex
 au BufRead,BufNewFile *.tex set syntax=tex
 
 " Sage tests on the buffered file

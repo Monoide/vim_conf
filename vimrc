@@ -118,11 +118,11 @@ set expandtab
 set modeline
 
 " Smart spaces and tabs
-set smarttab
+" set smarttab
 
 " Fold
 set foldmethod=marker
-set foldenable
+set nofoldenable
 
 set textwidth=79 "max width of a line
 
@@ -134,7 +134,7 @@ highlight LineNr ctermfg=grey
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+\%#\@<!$/
 " Delete trailing whitespace
-nnoremap <leader>w :%s/\s\+$//g<CR>:noh<CR>
+nnoremap <leader>w :%s/\s\+$//g<CR>:noh<CR>'`
 
 "Avoid the escape key
 imap jj <Esc>
@@ -220,3 +220,5 @@ let g:lightline = {
     \ 'separator': { 'left': '', 'right': '' },
     \ 'subseparator': { 'left': '', 'right': '' }
     \ }
+
+map <Leader>n :NERDTreeToggle<CR>

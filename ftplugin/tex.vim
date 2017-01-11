@@ -22,3 +22,9 @@ function! SyncTexForward()
     exec execstr
 endfunction
 nnoremap <LocalLeader>f :call SyncTexForward()<CR><CR>
+
+" Spell checking
+" This may be enough but it's too slow
+syntax sync fromstart
+" syn sync maxlines=200
+" syn sync minlines=50

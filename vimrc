@@ -176,6 +176,7 @@ au BufRead,BufNewFile *.pyx set syntax=cython
 " .tex and .cls are TeX
 au BufRead,BufNewFile *.cls set syntax=tex
 au BufRead,BufNewFile *.cls set filetype=tex
+au BufRead,BufNewFile *.tex set filetype=tex
 au BufRead,BufNewFile *.tex set syntax=tex
 au BufRead,BufNewFile *.tex set filetype=tex
 
